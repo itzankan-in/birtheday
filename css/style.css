@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+:root {
+    --font: 'Poppins', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+html {
+    font-size: 62.5%;
+    font-family: var(--font);
+}
+
+body {
+    background-color: pink;
+    /* background: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;   
+}
+.c {
+    --auto: 210px;
+    height: var(--auto);
+    width: var(--auto);
+    position: absolute;
+    /* bottom: 0; */
+    /* transition: 3s linear; */
+    animation: hello 5s linear infinite;
+    /* animation: no 2s linear infinite; */
+    /* display: block; */
+}
+@keyframes hello {
+ from {
+    transform: translateY(1000%);
+    
+    opacity: 100;
+ 
+}
+ to {
+ transform: translateY(-1000%);
+    opacity:0;
+}
+
+}
+.bdayboy {
+    max-height: 54rem;
+    max-width: 29rem;
+    /* outline: 20px magenta solid; */
+    border-radius: 3rem;
+    box-shadow: 0px 0px 20px 2px pink;
+
+}
+
+
+
+
+.box-cover {
+    width: 40rem;
+    height: 45rem;
+    background-color: #FD4988;
+    border-radius: 3rem;
+    
+    position: absolute;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 4px 20px 0px 5px #ff1668;
+}
+
+.box {
+    
+    width: 40rem;
+    height: auto;
+    background-color: #6b1634;
+    border-radius: 3rem;
+    border: #FD4988 .5rem solid;
+    box-shadow: 0px 0px 10px 3px darkgray;
+    color:white;
+    font-size: 2rem;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    /* overflow-y: scrolrem */
+    box-shadow: 10px 10px 20px 2px rgb(87, 87, 87);
+    /* box-shadow: 500px 300px 20px 3px #a61a4b inset; */
+
+}
+.one {
+    height: 100%;
+    width: 4rem;
+    background-color: white;
+    position: absolute;
+    
+}
+/* .one , .two {
+    box-shadow: 0px 0px 10px 3px darkgray;
+}  */
+.two {
+    width: 100%;
+    height: 4rem;
+    background-color: white;
+    align-self: center;
+
+}
+.huv {
+    animation: hehe 3s;
+}
+@keyframes hehe {
+
+   50% {
+    transform: translate(-35%,-35%) rotate(-10deg);
+   }
+   100% {
+    transform: translateY(1200%);
+   }
+}
