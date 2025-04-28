@@ -1,5 +1,5 @@
 let x = document.getElementById("myAudio"); 
-x.play()
+
 let heart= setInterval(() => {
     let imgArr= Array.from(document.getElementsByClassName("c"))
     if(imgArr.length != 50) {
@@ -24,7 +24,7 @@ let heart= setInterval(() => {
 // }, 5000);
  function whoose() {
    
-
+    x.play()
     let box = document.querySelector(".box-cover")
     box.classList.add("huv")
     box.style.cursor = "default"
