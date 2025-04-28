@@ -1,4 +1,6 @@
- let heart= setInterval(() => {
+let x = document.getElementById("myAudio"); 
+x.play()
+let heart= setInterval(() => {
     let imgArr= Array.from(document.getElementsByClassName("c"))
     if(imgArr.length != 50) {
         // console.log(imgArr.length)
@@ -33,6 +35,3 @@
 
 
 }
-// let audio = new Audio()
-audio.src = "../img/sexysong.mp3"
-audio.play()
